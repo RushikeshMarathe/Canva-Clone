@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+
+        div[company-image] {
+            animation: 10s infinite linear move;
+
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(10%);
+
+            }
+
+            100% {
+                transform: translateX(-10%);
+            }
+        }
+
+
+
+        div[company-blur1] {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(0, 188, 212, 1) 50%, rgba(255, 255, 255, 0) 50%);
+        }
+
+        div[company-blur2] {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(0, 188, 212, 1) 50%, rgba(255, 255, 255, 1) 50%);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div class="overflow-x-hidden relative ">
+
+        <!-- Navbar section -->
+        <section class="border-b-[2px] border-[#ebecf0] drop-shadow-xl md:w-full ">
+            <!-- Navbar -->
+            <nav
+                class="relative max-w-[1844px] mx-auto  flex min-h-[80px] items-center  justify-between md:w-full md:justify-around">
+                <!-- logo -->
+                <div class=" flex  items-center justify-between space-x-1 ">
+                    <div><img class="w-[90px] h-[40px] scale-100"
+                            src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt=""></div>
+
+                    <!-- links part -->
+                    <div class="flex ">
+                        <ul
+                            class="flex space-x-9 ml-10 text-[rgba(28,39,48)] font-lato text-[rgba(13,18,22,0.84)] font-[500] items-baseline text-[16px]">
+                            <li class="">Design spotlight <i
+                                    class="fa-solid fa-angle-down ml-2 mt-2 text-[14px] font-extrabold text-black"></i>
+                            </li>
+                            <li>Business <i
+                                    class="fa-solid fa-angle-down ml-2 mt-2 text-[14px] font-extrabold text-black"></i>
+                            </li>
+                            <li>Education <i
+                                    class="fa-solid fa-angle-down ml-2 mt-2 text-[14px] font-extrabold text-black"></i>
+                            </li>
+                            <li>Plans and Pricing <i
+                                    class="fa-solid fa-angle-down ml-2 mt-2 text-[14px] font-extrabold text-black"></i>
+                            </li>
+                            <li>Learn <i
+                                    class="fa-solid fa-angle-down ml-2 text-[14px] mt-2 font-extrabold text-black"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="flex space-x-10 items-baseline ">
+                    <div><i class="fa-solid fa-magnifying-glass text-[21px]"></i></div>
+                    <div><i class="fa-regular fa-circle-question text-[24px] "></i></div>
+                    <div class=""><button
+                            class="bg-[#40576D12] h-[40px] w-[84.19px] rounded-[2px] text-15px font-[500] text-center text-[#OD1216] scale-105 ">Log
+                            in</button></div>
+                    <div class="pl-[4px] pr-[4px]"><button
+                            class="h-[40px] w-[84.19px] bg-[#8B3DFF] text-[15px] font-[500] text-white rounded-[5px] scale-110 text-center">Sign
+                            Up</button></div>
+                </div>
+            </nav>
+        </section>
+
+
+        <!-- hero section -->
+        <section class="flex flex-col items-center w-full">
+
+            <!-- hero content section -->
+            <div
+                class="flex flex-col justify-center items-center max-w-[872px] mx-auto h-[314px] mt-[0px] gap-6 md:w-full">
+                <h1 class="text-[58px] text-[#OD1216] font-lato font-bold tracking-wider ">What will you <span
+                        class="bg-[linear-gradient(90deg,#00c4cc,#7d2ae8)] text-transparent bg-clip-text">design</span>
+                    today?</h1>
+                <h3 class="text-[OD1216B3] text-[1.5rem] font-thin">Canva makes it easy to create professional designs
+                    and to share or print them.</h3>
+                <div class="max-w-[872px] mx-auto "><button
+                        class="  bg-[#8B3DFF] w-[136.24px] h-[40px] rounded-[4px] pl-3 pr-3 pt-2 pb-2 scale-105 text-white font-[450] ">Sign
+                        up for free</button></div>
+
+            </div>
+
+            <div class="flex gap-5 relative max-w-[1600px]  overflow-x-auto transition-all scroll-smooth md:w-full md:relative  "
+                box-container>
+                <div
+                    class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden ml-9 ">
+                    <p class="absolute top-2 left-[30%] text-center font-lato font-bold text-lg z-40">Posters</p>
+                    <img src="/Images/posters.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[30%] text-center font-lato font-bold text-lg z-40">Resume</p>
+                    <img src="/Images/resume.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[40%] text-center font-lato font-bold text-lg z-40">Logos</p>
+                    <img src="/Images/logos.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[40%] text-center font-lato font-bold text-lg z-40">Docs</p>
+                    <img src="/Images/docs.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[25%] text-center font-lato font-bold text-lg z-40">Whiteboards</p>
+                    <img src="/Images/whiteboard.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[25%] text-center font-lato font-bold text-lg z-40">Presentation</p>
+                    <img src="/Images/presentation.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[35%] text-center font-lato font-bold text-lg z-40">Social</p>
+                    <img src="/Images/social.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[35%] text-center font-lato font-bold text-lg z-40">Videos</p>
+                    <img src="/Images/videos.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[35%] text-center font-lato font-bold text-lg z-40">Prints</p>
+                    <img src="/Images/prints.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[30%] text-center font-lato font-bold text-lg z-40">Websites</p>
+                    <img src="/Images/websites.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[20%] text-center font-lato font-bold text-lg z-40">Instagram post</p>
+                    <img src="/Images/instagram_post.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  ">
+                    <p class="absolute top-2 left-[30%] text-center font-lato font-bold text-lg z-40">Brochure</p>
+                    <img src="/Images/brochure.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+                <div
+                    class="w-[200px] h-[290px] relative  flex-grow-0 flex-shrink-0 rounded-[15px] overflow-hidden  mr-9">
+                    <p class="absolute top-2 left-[30%] text-center font-lato font-bold text-lg z-40">Photo editor</p>
+                    <img src="/Images/photo_editor.jpg" alt="" class="w-[200px] h-[280px] scale-110  rounded-md">
+                </div>
+
+                <div onclick="leftSlide()"
+                    class=" h-[50px] w-[50px] border rounded-full flex items-center justify-center absolute bg-white left-[85%] top-[45%] "
+                    arrow-left><i class="fa-solid fa-chevron-left"></i></div>
+                <div onclick="rightSlide()"
+                    class="h-[50px] w-[50px] border rounded-full flex items-center justify-center absolute bg-white right-7 top-[45%] "
+                    arrow-right><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </section>
+
+
+        <!-- subscription boxes section -->
+        <section class="max-w-[1377px]  mx-auto pt-24 flex flex-col gap-14">
+            <h1 class="text-center text-[35px] text-black font-bold font-lato tracking-wider">A perfect fit for everyone
+            </h1>
+            <div class="flex gap-8 md:w-full md:justify-around ">
+                <div
+                    class="border w-[450.33px] h-[343.78px] flex flex-col pl-[20px] pr-[20px] pt-[16px] pb-[16px] rounded-xl justify-around tracking-wide ">
+                    <div class="flex flex-col gap-6">
+                        <h2 class="text-[27px] text-[#OD1216] font-lato font-bold tracking-wider">Canva Free</h2>
+                        <p class="text-[#OD1216DB] text-[16px] text-left opacity-80">For anyone to design anything, on
+                            their own
+                            or with family, friends, or others. No experience required.</p>
+                    </div>
+                    <button class="bg-[#8b3DFF] h-12 rounded-[5px] text-white font-bold tracking-wide">Get Canva
+                        Free</button>
+                </div>
+                <div
+                    class="border w-[450.33px] h-[343.78px] flex flex-col pl-[20px] pr-[20px] pt-[16px] pb-[16px] rounded-xl justify-around tracking-wide">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3 text-[27px]">
+                            <i class="fa-solid fa-crown" style="color: #FFD43B;"></i>
+                            <h2 class="text-[27px] text-[#OD1216] font-lato font-bold tracking-wider">Canva Pro</h2>
+                        </div>
+                        <p class="text-[#OD1216DB] text-[16px] text-left opacity-80">For individuals, solopreneurs and
+                            freelance
+                            designers who want unlimited access to premium content, to create professional designs with
+                            ease and scale their productivity.</p>
+                    </div>
+                    <button class="bg-[#8b3DFF] h-12 rounded-[5px] text-white font-bold tracking-wide">Get Canva
+                        Free</button>
+                </div>
+                <div
+                    class="border w-[450.33px] h-[343.78px] flex flex-col pl-[20px] pr-[20px] pt-[16px] pb-[16px] rounded-xl justify-around tracking-wide">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3 text-[27px]">
+                            <i class="fa-solid fa-crown" style="color: #FFD43B;"></i>
+
+                            <h2 class="text-[27px] text-[#OD1216] font-lato font-bold tracking-wider">Canva For Teams
+                            </h2>
+                        </div>
+                        <p class="text-[#OD1216DB] text-[16px] text-left opacity-80">All the great features of Canva
+                            Pro, plus we
+                            think you’ll love these features designed to allow teams of all sizes to collaborate with
+                            ease.</p>
+                    </div>
+                    <button class="bg-[#8b3DFF] h-12 rounded-[5px] text-white font-bold tracking-wide">Get Canva
+                        Free</button>
+                </div>
+            </div>
+            <p class="text-center "><span class="underline text-[#8B3DFF]">Educational organizations</span> and <span
+                    class="underline text-[#8B3DFF]">nonprofits</span> can enjoy premium Canva features for free</p>
+        </section>
+
+
+        <!-- companies advertise section -->
+        <section class="relative max-w-[1688px] mx-auto pt-20">
+            <h1 class="text-center text-[37px] font-bold tracking-wider">Trusted by well known companies</h1>
+            <div class="absolute h-[100px] w-[700px] -left-40 z-10 blur-lg top-40" company-blur1></div>
+            <div class="absolute h-[100px] w-[700px] -right-40 z-10 blur-lg top-40" company-blur2></div>
+            <div class="absolute flex gap-20 pt-16 h-[100px]  w-full scale-150" company-image>
+                <ul class="flex items-center  gap-10 ">
+                    <li><img src="companies_images/danone.jpg " alt=""></li>
+                    <li><img src="companies_images/hubspot.jpg" alt=""></li>
+                    <li><img src="companies_images/sony-music.jpg" alt=""></li>
+                    <li><img src="companies_images/salesforce.jpg" alt=""></li>
+                    <li><img src="companies_images/skyscanner.jpg" alt=""></li>
+                    <li><img src="companies_images/reddit.jpg" alt=""></li>
+                </ul>
+                <ul class="flex items-center  gap-10 ">
+                    <li><img src="companies_images/danone.jpg" alt=""></li>
+                    <li><img src="companies_images/hubspot.jpg" alt=""></li>
+                    <li><img src="companies_images/sony-music.jpg" alt=""></li>
+                    <li><img src="companies_images/salesforce.jpg" alt=""></li>
+                    <li><img src="companies_images/skyscanner.jpg" alt=""></li>
+                    <li><img src="companies_images/reddit.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <!-- features section -->
+        <section class="pt-[300px] max-w-[1688px] mx-auto ">
+            <div class="flex justify-center items-center gap-28">
+                <div class=" w-[644px] h-[336px] p-20 flex flex-col gap-6">
+                    <h1 class="text-[32px] tracking-wide font-bold">Create with AI</h1>
+                    <p class="text-[18px] tracking-wide leading-7 text-[#OD1216] font-nato ">Redefine the way you create
+                        with Magic Studio, our
+                        suite of AI-powered tools. Generate copy in your brand voice with Magic Write, or transform your
+                        photos with Magic Edit.</p>
+                    <div class=""><button
+                            class="place-items-start border w-[123.53px] h-[40px] bg-[#40576D12] text-[#OD1216] tracking-wide font-bold text-[14px] px-3 rounded-[3px]">Discover
+                            now</button></div>
+                </div>
+                <div class="p-10 scale-150"><img src="companies_images/benefits-magic-studio.jpg"
+                        class="h-[370.22px] w-[500.89px] rounded-md"></div>
+            </div>
+            <div class="flex justify-center items-center gap-28 pt-[150px]">
+                <div class="p-10 scale-150"><img src="companies_images/benefits-together.jpg"
+                        class="h-[370.22px] w-[500.89px] rounded-md"></div>
+                <div class=" w-[644px] h-[336px] p-20 flex flex-col gap-6">
+                    <h1 class="text-[32px] tracking-wide font-bold">Design with others</h1>
+                    <p class="text-[18px] tracking-wide leading-7">Invite friends and family to design with you, or set
+                        your whole team up to work together. Our collaboration features let you comment and work in
+                        real-time on Presentations, Whiteboards, Docs, Videos, or that birthday party planning.</p>
+                    <div class=""><button
+                            class="place-items-start border w-[123.53px] h-[40px] bg-[#40576D12] text-[#OD1216] tracking-wide font-bold text-[14px] px-1 place-self-center py-2 rounded-[3px]">Start
+                            designing</button></div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-28 pt-32">
+                <div class=" w-[644px] h-[336px] p-20 flex flex-col gap-6">
+                    <h1 class="text-[32px] tracking-wide font-bold">Design and print in one place</h1>
+                    <p class="text-[18px] tracking-wide leading-7">Turn your memories into photo albums, your designs
+                        into
+                        T-shirts, and your branding into business cards, flyers or invites. Get all your printing done
+                        right here with free delivery to your doorstep.</p>
+                    <div class=""><button
+                            class="place-items-start border w-[163.53px] h-[40px] bg-[#40576D12] text-[#OD1216] tracking-wide font-bold text-[14px] px-3 rounded-[3px]">Print
+                            your creation</button></div>
+                </div>
+                <div class="p-10 scale-150"><img src="companies_images/benefits-magic-studio.jpg"
+                        class="h-[370.22px] w-[500.89px] rounded-md"></div>
+            </div>
+        </section>
+
+
+        <!-- Template section -->
+        <section class="w-[1445px] mx-auto pt-40 flex flex-col gap-9 items-center">
+            <div>
+                <h1 class="text-center text-[38px] font-[500] leading-10 tracking-wide text-[#OD1216]">Templates for
+                    absolutely anything</h1>
+            </div>
+            <div>
+                <p class="text-center tracking-wider text-[18px] text-[#OD1216B3] opacity-75 font-nato">Customize an
+                    office
+                    template, or design something more personal, like an invitation.</p>
+            </div>
+            <div class="grid grid-cols-6 gap-6 pt-5">
+                <div class="flex flex-col gap-6">
+                    <img src="Template/temp1.jpg" class="rounded-[9px]">
+                    <img src="Template/temp6.jpg" class="rounded-[9px]">
+                    <img src="Template/temp14.jpg" class="rounded-[9px]">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Template/temp5.jpg" class="rounded-[9px]">
+                    <img src="Template/temp7.jpg" class="rounded-[9px]">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Template/temp9.jpg" class="rounded-[9px]">
+                    <img src="Template/temp11.jpg" class="rounded-[9px]">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Template/temp12.jpg" class="rounded-[9px]">
+                    <img src="Template/temp10.jpg" class="rounded-[9px]">
+                    <img src="Template/temp8.jpg" class="rounded-[9px]">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Template/temp2.jpg" class="rounded-[9px]">
+                    <img src="Template/temp3.jpg" class="rounded-[9px]">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Template/temp13.jpg" class="rounded-[9px]">
+                    <img src="Template/temp4.jpg" class="rounded-[9px]">
+                </div>
+            </div>
+            <div class=" w-[174px] bg-[#40576D12] text-center scale-125"><button
+                    class="leading-9  text-[12px] font-[600]">Browse
+                    all template</button></div>
+        </section>
+
+
+        <!-- description section -->
+        <section class="max-w-[1288px] mx-auto mt-32 flex flex-col gap-[60px] h-[464px]">
+            <div class="flex flex-col gap-5">
+                <h1 class="text-center text-[32px] font-[600] tracking-wide leading-10 font-lato">Create your best work,
+                    together
+                </h1>
+                <p class="text-center text-[18px] text-[#OD1216B3] opacity-70 tracking-wide">Try Canva for Teams, the
+                    all-in-one solution for teams of all sizes to create<br> and collaborate together.</p>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+
+
+                <div class="flex justify-between items-center ">
+                    <!-- left part -->
+                    <div class="flex flex-col w-[400px] h-[320px] gap-12 justify-center items-center leading-6">
+                        <div class="flex gap-5 items-baseline">
+                            <i class="fa-regular fa-folder self-center text-[30px]"></i>
+                            <p>Team folders help you stay organized, store brand assets, and manage content</p>
+                        </div>
+                        <div class="flex gap-5 items-baseline">
+                            <i class="fa-solid fa-mobile-screen self-center text-[30px]"></i>
+                            <p>Team folders help you stay organized, store brand assets, and manage content</p>
+                        </div>
+                        <div class="flex gap-5 items-baseline ">
+                            <i class="fa-solid fa-user-plus self-center text-[30px]"></i>
+                            <p>Team folders help you stay organized, store brand assets, and manage content</p>
+                        </div>
+                        <div class="flex gap-5 items-baseline">
+                            <i class="fa-regular fa-comment self-center text-[30px]"></i>
+                            <p>Team folders help you stay organized, store brand assets, and manage content</p>
+                        </div>
+                    </div>
+
+                    <!-- right part -->
+                    <div class="border-r border-black">
+                        <video class="w-[628px] h-[464px]  " autoplay loop>
+                            <source src="Images/temp-vid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div
+                    class=" w-[174px] bg-[#40576D12] text-center scale-125 mt-16 bg-[#8B3DFF] text-white rounded-[2px] leading-9">
+                    <button class="  text-[12px] font-[500]">Try canva for teams</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- new features section -->
+        <section class="flex flex-col  items-center max-w-[1472px] mx-auto  gap-3 mt-[400px] mb-11">
+            <div>
+                <h1 class="text-center text-[32px] font-[700] tracking-normal leading-10 font-lato opacity-90">We’re
+                    full of surprises</h1>
+            </div>
+            <div>
+                <p class="text-center text-[18px] text-[#OD1216B3]  tracking-wide">Here are some of our best traits you
+                    might not know about</p>
+            </div>
+
+
+            <div class="flex gap-8 overflow-x-auto scroll-smooth relative max-w-[1844px] mt-7 md:w-full"
+                cont-b-conatainer>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image1.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We’ve got an Apps Marketplace</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Access leading
+                            AI features, discover more content, or integrate Canva with your existing platforms.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image2.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We've got a desktop app</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Design and
+                            collaborate from the comfort of your desktop - no browser, no tabs, no distractions.
+                            Download the app for free!</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image3.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">Businesses love us</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">See how teams of
+                            all sizes are using Canva to manage their workflows and create together.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image4.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We make presenting easy</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Take the stress
+                            out of preparing and presenting with our go-to decks.
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image5.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We have a video editor</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Create and edit
+                            professional videos with easy animations, audio and more.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image6.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We're free for classrooms</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Use Canva for
+                            in-person, remote or hybrid learning and teaching. Educators and students get their own free
+                            version of Canva.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image7.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We print and deliver</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Choose a
+                            designer-made template, customize it, and we'll have it sustainably printed and delivered to
+                            your doorstep.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image8.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We're sustainable
+                        </p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Learn what we're
+                            doing about our carbon footprint, and how your Canva Print order makes the world a bit more
+                            breathable.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image9.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We're free for nonprofits
+                        </p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Nonprofits get
+                            their own free version of Canva, to keep doing great work in the world.
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-[342px]">
+                        <img src="surprise/Image10.jpg" class="w-[364px] h-[248px] rounded-md">
+                        <p class="text-[15px] font-[600] mt-4">We're diverse</p>
+                        <p class="text-[14px] mt-1 text-[#OD1216DB] tracking-wide opacity-80 leading-6">Learn how we're
+                            supporting and amplifying diverse creators and unique cultures in every corner of the globe.
+                        </p>
+                    </div>
+                </div>
+
+                <div onclick="cont_leftSlide()"
+                    class="h-[50px] w-[50px] border rounded-full flex items-center justify-center absolute bg-white left-[102%] top-[30%]"
+                    cont-arrow-left><i class="fa-solid fa-chevron-left"></i></div>
+                <div onclick="cont_rightSlide()"
+                    class="h-[50px] w-[50px] border rounded-full flex items-center justify-center absolute bg-white right-7 top-[30%]"
+                    cont-arrow-right><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+    </div>
+    </section>
+
+
+
+    <!-- footer section -->
+    <section class="max-w-[1830px] mx-auto pt-28 flex flex-col md:w-full md:content-around ">
+        <div class="flex  pt-16 leading-9 border-t border-gray-300 border-[100%]  md:ml-10 ">
+            <div class="mr-52 ">
+                <h3 class="font-bold text-[18px] tracking-wide">Features</h3>
+                <p class="14px text-[#OD1216] tracking-wide">Curved text generator</p>
+                <p class="14px text-[#OD1216] tracking-wide">Image enhancer</p>
+                <p class="14px text-[#OD1216] tracking-wide">Photo effects</p>
+                <p class="14px text-[#OD1216] tracking-wide">Add frames to photos</p>
+                <p class="14px text-[#OD1216] tracking-wide">Add text to photos</p>
+                <p class="14px text-[#OD1216] tracking-wide">Online video recorder</p>
+                <p class="14px text-[#OD1216] tracking-wide">Video trimmer</p>
+                <p class="14px text-[#OD1216] tracking-wide">Convert videos to MP4</p>
+                <p class="14px text-[#OD1216] tracking-wide">See more features</p>
+            </div>
+            <div class="mr-52">
+                <h3 class="font-bold text-[18px] tracking-wide">Explore</h3>
+                <p class="14px text-[#OD1216] tracking-wide">Design ideas</p>
+                <p class="14px text-[#OD1216] tracking-wide">Custom prints</p>
+                <p class="14px text-[#OD1216] tracking-wide">Font pairing</p>
+                <p class="14px text-[#OD1216] tracking-wide">colors</p>
+                <p class="14px text-[#OD1216] tracking-wide">color wheel</p>
+                <p class="14px text-[#OD1216] tracking-wide">Color palette generator</p>
+                <p class="14px text-[#OD1216] tracking-wide">Blog</p>
+                <p class="14px text-[#OD1216] tracking-wide">Apps</p>
+                <p class="14px text-[#OD1216] tracking-wide">Template directory</p>
+            </div>
+            <div class="mr-52">
+                <h3 class="font-bold text-[18px] tracking-wide">Community </h3>
+                <p class="14px text-[#OD1216] tracking-wide">Online communities</p>
+                <p class="14px text-[#OD1216] tracking-wide">Creators</p>
+                <p class="14px text-[#OD1216] tracking-wide">Canva Represents Fund</p>
+                <p class="14px text-[#OD1216] tracking-wide">Developers</p>
+                <p class="14px text-[#OD1216] tracking-wide">Partnerships</p>
+                <p class="14px text-[#OD1216] tracking-wide">Affiliates program</p>
+            </div>
+            <div class="mr-52">
+                <h3 class="font-bold text-[18px] tracking-wide">Download</h3>
+                <p class="14px text-[#OD1216] tracking-wide">iOS</p>
+                <p class="14px text-[#OD1216] tracking-wide">Android</p>
+                <p class="14px text-[#OD1216] tracking-wide">Windows</p>
+                <p class="14px text-[#OD1216] tracking-wide">MAC</p>
+
+
+            </div>
+            <div class="mr-52">
+                <h3 class="font-bold text-[18px] tracking-wide">Company</h3>
+                <p class="14px text-[#OD1216] tracking-wide">About</p>
+                <p class="14px text-[#OD1216] tracking-wide">Newsroom</p>
+                <p class="14px text-[#OD1216] tracking-wide">Careers</p>
+                <p class="14px text-[#OD1216] tracking-wide">Sustainability
+                </p>
+                <p class="14px text-[#OD1216] tracking-wide">Trust Center</p>
+                <p class="14px text-[#OD1216] tracking-wide">Security</p>
+                <p class="14px text-[#OD1216] tracking-wide">Terms and Privacy</p>
+                <p class="14px text-[#OD1216] tracking-wide">Contact Sales</p>
+            </div>
+        </div>
+
+
+        <div class="border-t border-gray-300 border-[100%] mt-24 flex justify-between py-10">
+            <div class="mt-6">
+                <button class="flex items-center gap-4 px-4 border py-1 border-gray-300 justify-center">
+                    <i class="fa-solid fa-globe text-[20px]"></i>
+                    English (US)
+                    <i class="fa-solid fa-chevron-down text-[16px]"></i>
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <p class="text-center opacity-70">© 2024 All Rights Reserved, Canva®</p>
+                <p class="text-center ">Privacy policy | Terms</p>
+            </div>
+
+
+            <div class="text-[24px] flex gap-3">
+                <i class="fa-brands fa-facebook" style="color: #2ea4ff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #4b8cfb;"></i>
+                <i class="fa-brands fa-pinterest" style="color: #e04410;"></i>
+                <i class="fa-brands fa-instagram" style="color: #db2473;"></i>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com//58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
