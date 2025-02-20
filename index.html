@@ -54,6 +54,24 @@
         div[company-blur2] {
             background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(0, 188, 212, 1) 50%, rgba(255, 255, 255, 1) 50%);
         }
+
+/* Hide dropdown content by default */
+.footer-dropdown {
+    display: none;
+}
+
+/* Show dropdown content when active */
+.footer-dropdown.active {
+    display: block;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+    .footer-dropdown {
+        display: block !important; /* Important to override Tailwind's utility classes */
+    }
+}
+
     </style>
 </head>
 
@@ -535,7 +553,7 @@
 
 
     <!-- footer section -->
-    <section class="max-w-[1830px] mx-auto pt-28 flex flex-col md:w-full md:content-around ">
+    <!-- <section class="max-w-[1830px] mx-auto pt-28 flex flex-col md:w-full md:content-around ">
         <div class="flex  pt-16 leading-9 border-t border-gray-300 border-[100%]  md:ml-10 ">
             <div class="mr-52 ">
                 <h3 class="font-bold text-[18px] tracking-wide">Features</h3>
@@ -620,7 +638,122 @@
 
 
 
-    </section>
+    </section> -->
+
+    <footer class="container mx-auto py-12">
+        <div class="flex gap-8 ml-9">
+            <!-- Features -->
+            <div class="w-full md:w-1/5">
+                <h3 class="text-lg font-semibold mb-4">Features <i class="fas fa-chevron-down ml-2 dropdown-icon md:hidden cursor-pointer"></i></h3>
+                <ul class="list-none footer-dropdown footer-dropdown-content md:block hidden text-sm">
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Curved text generator</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Image enhancer</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Photo effects</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Add frames to photos</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Add text to photos</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Online video recorder</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Video trimmer</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Convert videos to MP4</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">See more features</a></li>
+                </ul>
+            </div>
+    
+            <!-- Explore -->
+            <div class="w-full md:w-1/5">
+                <h3 class="text-lg font-semibold mb-4">Explore <i class="fas fa-chevron-down ml-2 dropdown-icon md:hidden cursor-pointer"></i></h3>
+                <ul class="list-none footer-dropdown footer-dropdown-content md:block hidden text-sm">
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Design ideas</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Custom prints</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Font pairing</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Colors</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Color wheel</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Color palette generator</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Blog</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Apps</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Template directory</a></li>
+                </ul>
+            </div>
+    
+            <!-- Community -->
+            <div class="w-full md:w-1/5">
+                <h3 class="text-lg font-semibold mb-4">Community <i class="fas fa-chevron-down ml-2 dropdown-icon md:hidden cursor-pointer"></i></h3>
+                <ul class="list-none footer-dropdown footer-dropdown-content md:block hidden text-sm">
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Online communities</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Creators</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Canva Represents Fund</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Developers</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Partnerships</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Affiliates program</a></li>
+                </ul>
+            </div>
+    
+            <!-- Download -->
+            <div class="w-full md:w-1/5">
+                <h3 class="text-lg font-semibold mb-4">Download <i class="fas fa-chevron-down ml-2 dropdown-icon md:hidden cursor-pointer"></i></h3>
+                <ul class="list-none footer-dropdown footer-dropdown-content md:block hidden text-sm">
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">iOS</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Android</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Windows</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">MAC</a></li>
+                </ul>
+            </div>
+    
+            <!-- Company -->
+            <div class="w-full md:w-1/5">
+                <h3 class="text-lg font-semibold mb-4">Company <i class="fas fa-chevron-down ml-2 dropdown-icon md:hidden cursor-pointer"></i></h3>
+                <ul class="list-none footer-dropdown footer-dropdown-content md:block hidden text-sm">
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">About</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Newsroom</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Careers</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Sustainability</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Trust Center</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Security</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Terms and Privacy</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-gray-800">Contact Sales</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Copyright and Social -->
+        <div class="mt-12 border-t pt-8 flex flex-col justify-between items-center">
+            <div class="text-sm text-gray-600">
+                &copy; 2024 Your Company. All rights reserved.
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <!-- Include Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    
+    <!-- JavaScript for dropdown functionality on smaller screens -->
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const icons = document.querySelectorAll('.dropdown-icon');
+
+    icons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            const dropdown = icon.parentElement.nextElementSibling;
+            dropdown.classList.toggle('active');
+        });
+    });
+});
+
+    </script>
+    
+    
+    
+    
+    
+    
+
 
     </div>
 
