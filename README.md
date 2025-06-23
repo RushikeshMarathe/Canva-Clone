@@ -1,5 +1,5 @@
             *************** Canva Clone *****************
-            Live Demo : https://canva-clone-tailwind.netlify.app/
+            Live Demo : https://canva-clone-tailwind.netlify.app
 
             Build Using :-
             HTML | CSS | JavaScript | Tailwind CSS
